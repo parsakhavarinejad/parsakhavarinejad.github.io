@@ -1,124 +1,92 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-
-<!-- Head -->
-<head>
-  <!-- Page Meta Tags-->
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
-	<base href="./">
-
-
-	
-
-	 
-	 
-	<style>
-		
-	</style>
-	
-
-	
-
-	<link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
-	<link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
-
-	<link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
-
-	<link rel="manifest" href="/manifest.webmanifest">
-
-	<link rel="alternate" hreflang="" href=""/> 
-
-  <!-- Google Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Homemade+Apple&display=swap"
-    rel="stylesheet">
-
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./css/libs.bundle.css" />
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./css/theme.bundle.css" />
-  
-  	<link id="vvvebjs-css" href="css/custom.css" rel="stylesheet" media="screen">
-
-  <!-- Fix for custom scrollbar if JS is disabled-->
-  <noscript>
-    <style>
-      /**
-          * Reinstate scrolling for non-JS clients
-          */
-      .simplebar-content-wrapper {
-        overflow: auto;
-      }
-    </style>
-  </noscript>
-
-
-  <!-- Page Title -->
-  <title>Muse - Bootstrap 5 HTML Template</title>
-  
-
-</head>
-
-
-<body class="">
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom" title="navigation">
-	<div class="container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
-	  <a class="navbar-brand me-10" href="/" data-v-url-params='{"host":"www.*.*"}'>
-		  <div class="f-w-10">
-			   <div data-v-component-site>	
-				   <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-				   <!-- <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo> -->
+Vvveb.Sections.add("muse/about", {
+    name: "About",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/about-thumb.jpeg",
+    html: `<section title="about">
+	<div class="container">
+		<div class="row g-5 about py-5">
+			<div class="col-12 col-xl-6" data-aos="reveal-left">
+				<h3 class="display-5">I am a multi-discipline graphic designer who enjoys challenges of all shapes and sizes.</h3>
+			</div>
+			<div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
+				<p>I create logos and illustrations that stand out in today’s overstimulated world. I use my skill set to study your company culture while strategizing about what you want the audience to think when they see it again in some other capacity.</p>
+				<p></p>Ultimately creating graphics with an intelligent tone which bridges that gap between business and consumer interaction for both parties involved.</p>
+			</div>
+		</div>   
+	</div>   
+</section>
+`
+});Vvveb.Sections.add("muse/experience", {
+    name: "Experience",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/experience-thumb.jpeg",
+    html: `<section class="py-8 experience">
+	<div class="container">
+	<div class="mb-6 py-2" data-aos="reveal-right">
+		<h3 class="display-3 lh-1"><span class="font-script d-block text-danger display-6 lh-1 ps-1">My</span> Experience</h3>
+		<div class="f-w-60 text-warning">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 12.32"><path d="M170,1.88c-18.36-.72-17,8.73-33.3,8.7-17.86,0-26.63-8.43-43.12-10.2C76.84-1.43,66.44,3.69,56.44,6.89,39.25,12.37,10.14,9.6,2.68,1.11,2.16.53-.38.67.05,1.27,3.88,6.63,17.5,10.92,33.64,11.32a85.71,85.71,0,0,0,21.53-2c8.11-1.93,13.35-5,22-6.67,20.93-4,33,5.93,50,8.77,7.09,1.17,14.78,1.25,20.59-.37,6.49-1.8,8.31-5,15.08-6.66C173.06,1.89,181.43,7,190,8.59a68.55,68.55,0,0,0,24.63-.06c3.13-.63.13-2.5-2.92-1.83A52.54,52.54,0,0,1,185.8,5.27C181.17,3.83,176.38,2.14,170,1.88Z" fill="currentColor"/></svg>    </div>
+	</div>        <div class="row gx-10 gy-5">
+				<!-- Single Skill-->
+				<div class="col-12 col-md-6" data-aos="reveal-down">
+					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
+						<h4>Art Director</h4> <span class="text-muted ms-lg-2">(2020 - present)</span>
+					</div>
+					<p class="opacity-90">After two years of working in London, I joined the NWD Designs team. Our design group works with clients including Motorola and Nokia who are just some examples; Apple stands out among all others because it had such an impactful brand identity for decades until they rebranded recently.</p>
 				</div>
-			  <!--
-			  <svg viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				  <g transform="translate(0.000000, 12.000000)" class="text-primary">
-					  <polygon fill="currentColor" points="0.00246419545 0 0 27 3.71518534 23.2096589 3.71518534 4.62584189 3.71518534 3.78782706 4.53658382 3.78782706 8.46314238 3.78782706 9.28426706 3.78782706 9.28426706 4.62584189 9.28426706 17.527639 13 13.7372979 13 0"></polygon>
-					  <polygon fill="currentColor" points="17.2245953 15 13.4449458 18.7154591 24.3875464 18.7154591 25.2231358 18.7154591 25.2231358 19.5368576 25.2231358 23.4631424 25.2231358 24.2845409 24.3875464 24.2845409 7.7796495 24.2845409 4 28 29 27.9975358 29 15"></polygon>
-				  </g>
-				  <g transform="translate(20.000000, 0.000000)" class="text-danger">
-					  <polygon fill="currentColor" points="16.1170347 6.88274433 16.1170347 15.2581781 16.1170347 16.1172557 15.2579716 16.1172557 6.88296528 16.1172557 3 20 20 20 20 3"></polygon>
-					  <polygon fill="currentColor" points="0 0 0 18 3.68328127 14.3167187 3.68328127 4.49789488 3.68328127 3.68300964 4.49816651 3.68300964 14.3167187 3.68300964 18 0"></polygon>
-				  </g>
-			  </svg>
-			  -->
-		  </div>
-	  </a>
-	  <ul class="navbar-nav me-auto d-none d-lg-flex mb-lg-0">
-		<li class="nav-item">
-		  <a class="nav-link d-flex align-items-center me-5 tracking-wide" href="#"><i class="ri-dribbble-line ri-xl me-2 align-middle"></i> Dribbble</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link d-flex align-items-center tracking-wide" href="#"><i class="ri-behance-fill ri-xl me-2 align-middle"></i> Behance</a>
-		</li>
-	  </ul>
-	  <button class="border-0 bg-transparent btn-open-slideout btn-toggle-slideout">
-		<span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
-		<span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
-		<span class="f-w-10 f-h-1 bg-white d-block"></span>
-	  </button>
+				<!-- / Single Skill -->
+				<!-- Single Skill-->
+				<div class="col-12 col-md-6" data-aos="reveal-down">
+					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
+						<h4>Creative Director</h4> <span class="text-muted ms-lg-2">(2018 - 2020)</span>
+					</div>
+					<p class="opacity-90">Looking for a new challenge, I joined Pinnacle Designs. My role focused on helping our customers define their strategic branding needs and requirements to achieve an elegant end result that stands out among competitors&#x27; work.</p>
+				</div>
+				<!-- / Single Skill -->
+				<!-- Single Skill-->
+				<div class="col-12 col-md-6" data-aos="reveal-down">
+					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
+						<h4>Lead Designer</h4> <span class="text-muted ms-lg-2">(2016 - 2018)</span>
+					</div>
+					<p class="opacity-90">I have always loved the idea of being in charge of a design team, so I joined Super 8 as a lead designer where we worked on amazing campaigns including the branding and advert assets for Facebook&#x27;s VR arm.</p>
+				</div>
+				<!-- / Single Skill -->
+				<!-- Single Skill-->
+				<div class="col-12 col-md-6" data-aos="reveal-down">
+					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
+						<h4>Graphic Designer</h4> <span class="text-muted ms-lg-2">(2014 - 2016)</span>
+					</div>
+					<p class="opacity-90">After finishing my degree in Graphic Design, I joined Cube agency in London in 2014 and worked on projects for companies such as Nestle, Spotify and Red Cabbage.</p>
+				</div>
+				<!-- / Single Skill -->
+		</div>
+	<div class="d-flex justify-content-md-center mt-5 py-1" data-aos="reveal-up">
+		<a href="#" class="btn btn-pseudo">Download My CV</a>
 	</div>
-  </nav>
+</div>     
+</section>     
+`
+});Vvveb.Sections.add("muse/footer", {
+    name: "Footer",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/footer-thumb.jpeg",
+    html: `<footer class="container mb-10  ">
+	<h6 class="display-2 tracking-wide mb-3" data-aos="slide-up">Want to work with me?</h6>
+	<p class="text-muted lead tracking-wide mb-5" data-aos="reveal-left" data-aos-delay="500">Get the ball rolling</p>
+	<a href="#" class="text-warning display-6 font-serif tracking-wide text-decoration-none" data-aos="reveal-right" data-aos-delay="1200">hello@ben.lucia</a>
 
-	
-	<section class="container">
+	<ul class="list-unstyled d-flex mt-5 mb-4" data-aos="fade-up">
+		<li class="me-7"><a class="text-body text-decoration-none" href="#">Dribbble</a></li>
+		<li class="me-7"><a class="text-body text-decoration-none" href="#">Behance</a></li>
+		<li class="me-7"><a class="text-body text-decoration-none" href="#">LinkedIn</a></li>
+		<li class="me-7"><a class="text-body text-decoration-none" href="#">Instagram</a></li>
+	</ul>
+
+	<p class="text-muted" data-aos="fade-up">All rights reserved. © Ben Lucia 2021. Template made with ❤️️ by <a href="https://www.pixelrocket.store">Pixel Rocket</a></p>
+
+</footer>
+`
+});Vvveb.Sections.add("muse/hero", {
+    name: "Hero",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/hero-thumb.jpeg",
+    html: `<section class="container">
 	<div class="row my-5 my-lg-10 pb-5 g-5">
 		<div class="col-12 col-md-6">
 			<p class="lead tracking-wide" data-aos="fade-left"><span class="display-6 me-2">👋</span> Hello, I’m</p>
@@ -252,24 +220,46 @@
 		</div>
 	</div>      
 </section>
-
-	
-	<section title="about" title="about">
-	<div class="container">
-		<div class="row g-5 about py-5">
-			<div class="col-12 col-xl-6" data-aos="reveal-left">
-				<h3 class="display-5">I am a multi-discipline graphic designer who enjoys challenges of all shapes and sizes.</h3>
-			</div>
-			<div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
-				<p>I create logos and illustrations that stand out in today’s overstimulated world. I use my skill set to study your company culture while strategizing about what you want the audience to think when they see it again in some other capacity.</p>
-				<p></p>Ultimately creating graphics with an intelligent tone which bridges that gap between business and consumer interaction for both parties involved.</p>
-			</div>
-		</div>   
-	</div>   
-</section>
-
-	
-	<section class="py-8 portfolio" title="portfolio">
+`
+});Vvveb.Sections.add("muse/navigation", {
+    name: "Navigation",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/navigation-thumb.jpeg",
+    html: `<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom">
+	<div class="container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
+	  <a class="navbar-brand me-10" href="#">
+		  <div class="f-w-10">
+			  <svg viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				  <g transform="translate(0.000000, 12.000000)" class="text-primary">
+					  <polygon fill="currentColor" points="0.00246419545 0 0 27 3.71518534 23.2096589 3.71518534 4.62584189 3.71518534 3.78782706 4.53658382 3.78782706 8.46314238 3.78782706 9.28426706 3.78782706 9.28426706 4.62584189 9.28426706 17.527639 13 13.7372979 13 0"></polygon>
+					  <polygon fill="currentColor" points="17.2245953 15 13.4449458 18.7154591 24.3875464 18.7154591 25.2231358 18.7154591 25.2231358 19.5368576 25.2231358 23.4631424 25.2231358 24.2845409 24.3875464 24.2845409 7.7796495 24.2845409 4 28 29 27.9975358 29 15"></polygon>
+				  </g>
+				  <g transform="translate(20.000000, 0.000000)" class="text-danger">
+					  <polygon fill="currentColor" points="16.1170347 6.88274433 16.1170347 15.2581781 16.1170347 16.1172557 15.2579716 16.1172557 6.88296528 16.1172557 3 20 20 20 20 3"></polygon>
+					  <polygon fill="currentColor" points="0 0 0 18 3.68328127 14.3167187 3.68328127 4.49789488 3.68328127 3.68300964 4.49816651 3.68300964 14.3167187 3.68300964 18 0"></polygon>
+				  </g>
+			  </svg>
+		  </div>
+	  </a>
+	  <ul class="navbar-nav me-auto d-none d-lg-flex mb-lg-0">
+		<li class="nav-item">
+		  <a class="nav-link d-flex align-items-center me-5 tracking-wide" href="#"><i class="ri-dribbble-line ri-xl me-2 align-middle"></i> Dribbble</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link d-flex align-items-center tracking-wide" href="#"><i class="ri-behance-fill ri-xl me-2 align-middle"></i> Behance</a>
+		</li>
+	  </ul>
+	  <button class="border-0 bg-transparent btn-open-slideout btn-toggle-slideout">
+		<span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
+		<span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
+		<span class="f-w-10 f-h-1 bg-white d-block"></span>
+	  </button>
+	</div>
+  </nav>
+`
+});Vvveb.Sections.add("muse/portfolio", {
+    name: "Portfolio",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/portfolio-thumb.jpeg",
+    html: `<section class="py-8 portfolio">
 	<div class="container">
 	<div class="mb-6 py-2" data-aos="reveal-right">
 		<h3 class="display-3 lh-1"><span class="font-script d-block text-danger display-6 lh-1 ps-1">My</span> Portfolio</h3>
@@ -415,56 +405,11 @@
 	</div>
 </div> 
 </section> 
-
-	
-	<section class="py-8 experience" title="experience">
-	<div class="container">
-	<div class="mb-6 py-2" data-aos="reveal-right">
-		<h3 class="display-3 lh-1"><span class="font-script d-block text-danger display-6 lh-1 ps-1">My</span> Experience</h3>
-		<div class="f-w-60 text-warning">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 12.32"><path d="M170,1.88c-18.36-.72-17,8.73-33.3,8.7-17.86,0-26.63-8.43-43.12-10.2C76.84-1.43,66.44,3.69,56.44,6.89,39.25,12.37,10.14,9.6,2.68,1.11,2.16.53-.38.67.05,1.27,3.88,6.63,17.5,10.92,33.64,11.32a85.71,85.71,0,0,0,21.53-2c8.11-1.93,13.35-5,22-6.67,20.93-4,33,5.93,50,8.77,7.09,1.17,14.78,1.25,20.59-.37,6.49-1.8,8.31-5,15.08-6.66C173.06,1.89,181.43,7,190,8.59a68.55,68.55,0,0,0,24.63-.06c3.13-.63.13-2.5-2.92-1.83A52.54,52.54,0,0,1,185.8,5.27C181.17,3.83,176.38,2.14,170,1.88Z" fill="currentColor"/></svg>    </div>
-	</div>        <div class="row gx-10 gy-5">
-				<!-- Single Skill-->
-				<div class="col-12 col-md-6" data-aos="reveal-down">
-					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
-						<h4>Art Director</h4> <span class="text-muted ms-lg-2">(2020 - present)</span>
-					</div>
-					<p class="opacity-90">After two years of working in London, I joined the NWD Designs team. Our design group works with clients including Motorola and Nokia who are just some examples; Apple stands out among all others because it had such an impactful brand identity for decades until they rebranded recently.</p>
-				</div>
-				<!-- / Single Skill -->
-				<!-- Single Skill-->
-				<div class="col-12 col-md-6" data-aos="reveal-down">
-					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
-						<h4>Creative Director</h4> <span class="text-muted ms-lg-2">(2018 - 2020)</span>
-					</div>
-					<p class="opacity-90">Looking for a new challenge, I joined Pinnacle Designs. My role focused on helping our customers define their strategic branding needs and requirements to achieve an elegant end result that stands out among competitors&#x27; work.</p>
-				</div>
-				<!-- / Single Skill -->
-				<!-- Single Skill-->
-				<div class="col-12 col-md-6" data-aos="reveal-down">
-					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
-						<h4>Lead Designer</h4> <span class="text-muted ms-lg-2">(2016 - 2018)</span>
-					</div>
-					<p class="opacity-90">I have always loved the idea of being in charge of a design team, so I joined Super 8 as a lead designer where we worked on amazing campaigns including the branding and advert assets for Facebook&#x27;s VR arm.</p>
-				</div>
-				<!-- / Single Skill -->
-				<!-- Single Skill-->
-				<div class="col-12 col-md-6" data-aos="reveal-down">
-					<div class="d-flex align-items-start mb-3 flex-column flex-lg-row align-items-lg-center">
-						<h4>Graphic Designer</h4> <span class="text-muted ms-lg-2">(2014 - 2016)</span>
-					</div>
-					<p class="opacity-90">After finishing my degree in Graphic Design, I joined Cube agency in London in 2014 and worked on projects for companies such as Nestle, Spotify and Red Cabbage.</p>
-				</div>
-				<!-- / Single Skill -->
-		</div>
-	<div class="d-flex justify-content-md-center mt-5 py-1" data-aos="reveal-up">
-		<a href="#" class="btn btn-pseudo">Download My CV</a>
-	</div>
-</div>     
-</section>     
-
-	
-	<section class="py-8 skills" title="skills">
+`
+});Vvveb.Sections.add("muse/skills", {
+    name: "Skills",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/skills-thumb.jpeg",
+    html: `<section class="py-8 skills">
 	<div class="container">
 	<div class="mb-6 py-2" data-aos="reveal-right">
 		<h3 class="display-3 lh-1"><span class="font-script d-block text-danger display-6 lh-1 ps-1">My</span> Skills</h3>
@@ -559,9 +504,11 @@
 		</div>
 </div>
 </section>
-
-	
-	<section class="py-8 testimonials" title="testimonials">
+`
+});Vvveb.Sections.add("muse/testimonials", {
+    name: "Testimonials",
+    image: Vvveb.themeBaseUrl + "/screenshots/muse/testimonials-thumb.jpeg",
+    html: `<section class="py-8 testimonials">
 	<div class="container position-relative">
 	<div class="mb-6 py-2" data-aos="reveal-right">
 		<h3 class="display-3 lh-1"><span class="font-script d-block text-danger display-6 lh-1 ps-1">Client</span> Testimonials</h3>
@@ -633,194 +580,6 @@
 	<!-- / Swiper Latest-->    <!-- / Testimonial Slideshow-->
 </div>
 </section>
-
-	
-	<footer class="container mb-10" title="footer">
-	<h6 class="display-2 tracking-wide mb-3" data-aos="slide-up">Want to work with me?</h6>
-	<p class="text-muted lead tracking-wide mb-5" data-aos="reveal-left" data-aos-delay="500">Get the ball rolling</p>
-	<a href="#" class="text-warning display-6 font-serif tracking-wide text-decoration-none" data-aos="reveal-right" data-aos-delay="1200" data-v-global-site.contact-email>hello@ben.lucia</a>
-
-	<ul class="list-unstyled d-flex mt-5 mb-4" data-aos="fade-up">
-		<li class="me-7"><a class="text-body text-decoration-none" href="#">Dribbble</a></li>
-		<li class="me-7"><a class="text-body text-decoration-none" href="#">Behance</a></li>
-		<li class="me-7"><a class="text-body text-decoration-none" href="#">LinkedIn</a></li>
-		<li class="me-7"><a class="text-body text-decoration-none" href="#">Instagram</a></li>
-	</ul>
-
-	<p class="text-muted" data-aos="fade-up">All rights reserved. © <span data-v-global-site.title>Ben Lucia</span> <span data-v-year>2023</span>. Template made with ❤️️ by <a href="https://www.pixelrocket.store">Pixel Rocket</a> Powered by <a href="https://www.vvveb.com">Vvveb</a></p>
-
-</footer>
-
-	 
-	<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-xl">
-		<div class="modal-content overflow-hidden">
-			<div class="modal-body p-0">
-				<div class="row g-0">
-					<!-- Profile Image-->
-					<div class="col-12 col-lg-6">
-						<picture>
-							<img class="portfolio-modal-img img-fluid" src="" alt="HTML Bootstrap Template by Pixel Rocket">
-						</picture>
-					</div>
-					<!-- Profile Description-->
-						<div class="col-12 col-lg-6 text-dark align-items-center d-flex">
-							<div class="p-6 py-lg-4">
-								<div class="intro">
-									<h3 class="display-5 mb-3"></h3>
-									<p class="text-muted"></p>
-								</div>
-								<div class="client my-4">
-									<p class="text-uppercase small fw-bolder mb-1">Client</p>
-									<p class="text-muted small"></p>
-								</div>
-								<div class="category">
-									<p class="text-uppercase small fw-bolder mb-1">Category</p>
-									<p class="text-muted small"></p>
-								</div>
-							</div>
-						</div>
-					<!-- / Profile Description-->
-				</div>
-			</div>
-		</div>
-	</div>
-</div><!-- / Single Portfolio Modal--><!-- / Modal Imports-->
-
-<!-- Slideout-->
-<!-- Slideout-->
-<div class="slideout text-dark">
-
-	<!-- slideout Backdrop-->
-	<div class="slideout-bg"></div>
-	<!-- slideout Backdrop-->
-
-	<!-- Slideout Bg Image-->
-	<div class="slideout-img">
-	</div>
-	<!-- Slideout Bg Image-->
-
-	<!-- Slideout Body-->
-	<div class="slideout-body">
-
-		<!-- Close Btn-->
-		<button class="btn-close-slideout btn-toggle-slideout"><i class="ri-close-circle-line ri-2x"></i></button>
-		<!-- Close Btn-->
-		<div>
-			<!-- Slideout Menu-->
-			<div class="my-4 my-md-7 my-lg-10" data-v-component-menu="header" data-v-slug="main-menu">
-				<nav class="slideout-nav" data-v-menu-items>
-					<ul class="m-0 p-0 list-unstyled text-dark">
-						<li class="slideout-navitem" data-v-menu-item>
-							<a class="slideout-navlink" href="#"
-								data-pixr-scrollto
-								data-bs-target=".about" data-v-menu-item-url
-							>
-
-							<span data-v-menu-item-name data-v-if-not="category.type = 'text'">About Me</span>
-							<span data-v-menu-item-content>
-								<p><img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu</p>
-							</span>
-								
-							</a>
-						</li>
-						<li class="slideout-navitem" data-v-menu-item>
-							<a class="slideout-navlink" href="#"
-								data-pixr-scrollto
-								data-bs-target=".portfolio" data-v-menu-item-url
-							>
-							<span data-v-menu-item-name data-v-if-not="category.type = 'text'">My Portfolio</span>
-							<span data-v-menu-item-content>
-								<p><img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu</p>
-							</span>
-
-								
-							</a>
-						</li>
-						<li class="slideout-navitem" data-v-menu-item>
-							<a class="slideout-navlink" href="#"
-								data-pixr-scrollto
-								data-bs-target=".experience" data-v-menu-item-url
-							>
-							<span data-v-menu-item-name data-v-if-not="category.type = 'text'">My Experiencee</span>
-							<span data-v-menu-item-content>
-								<p><img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu</p>
-							</span>
-								
-							</a>
-						</li>
-						<li class="slideout-navitem" data-v-menu-item>
-							<a class="slideout-navlink" href="#"
-								data-pixr-scrollto
-								data-bs-target=".skills" data-v-menu-item-url
-							>
-							<span data-v-menu-item-name data-v-if-not="category.type = 'text'">My Skills</span>
-							<span data-v-menu-item-content>
-								<p><img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu</p>
-							</span>
-								
-							</a>
-						</li>
-						<li class="slideout-navitem" data-v-menu-item>
-							<a class="slideout-navlink" href="#"
-								data-pixr-scrollto
-								data-bs-target=".testimonials" data-v-menu-item-url
-							>
-							
-							<span data-v-menu-item-name data-v-if-not="category.type = 'text'">Testimonials</span>
-							<span data-v-menu-item-content>
-								<p><img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu</p>
-							</span>
-								
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<!-- /Slideout Menu-->
-
-			<!-- Slideout Contact-->
-			<div class="slideout-contact" data-v-component-site>
-				<ul class="m-0 p-0 list-unstyled">
-					<li class="d-flex align-items-center mb-3" data-v-if="site.contact-email">
-						<i class="ri-mail-line me-3 text-primary"></i>
-						<span data-v-site-contact-email>hello@ben.lucia</span>
-					</li>
-					<li class="d-flex align-items-center" data-v-if="site.description.phone-number">
-						<i class="ri-smartphone-line me-3 text-primary"></i>
-						<span data-v-site-description-phone-number>+44 (0)208 1234 345</span>
-					</li>
-				</ul>
-			</div>
-			<!-- /Slideout Contact-->
-		</div>
-		<!-- Slideout Socials-->
-		<div class="slideout-socials d-none d-md-flex">
-			<ul class="list-unstyled m-0 p-0">
-				<li>
-					<a class="text-decoration-none text-muted d-flex align-items-center mb-2 text-primary-hover"
-						href="#"><i class="ri-dribbble-line ri-lg me-3 align-middle"></i> Dribbble</a>
-				</li>
-				<li>
-					<a class="text-decoration-none text-muted d-flex align-items-center mb-2 text-primary-hover"
-						href="#"><i class="ri-behance-fill ri-lg me-3 align-middle"></i> Behance</a>
-				</li>
-			</ul>
-		</div>
-		<!-- /Slideout Socials-->
-	</div>
-	<!-- /Slideout Body-->
-
-</div>
-<!-- Slideout--><!-- / Slideout -->    <!-- / Footer-->
-
-<!-- Theme JS -->
-<!-- Vendor JS -->
-<script src="./js/vendor.bundle.js"></script>
-
-<!-- Theme JS -->
-<script src="./js/theme.bundle.js"></script>
-    
-    
-</body>
-</html>
+`
+});
+	Vvveb.SectionsGroup["Muse"] = ["muse/about","muse/experience","muse/footer","muse/hero","muse/navigation","muse/portfolio","muse/skills","muse/testimonials"];
