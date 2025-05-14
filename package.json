@@ -1,9 +1,9 @@
 {
-  "name": "Muse",
+  "name": "about-me-template",
   "version": "1.0.0",
-  "description": "Muse - Vvveb Bootstrap 5 template",
-  "author": "PixelRocket",
-  "license": "MIT",
+  "description": "Vvveb Bootstrap 5 template",
+  "author": "Ziadin Givan",
+  "license": "Apache-2.0",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",

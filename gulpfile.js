@@ -19,7 +19,7 @@ const fileinclude = require('gulp-file-include');
 //const sass = require('gulp-sass')(require('sass'));
 const sass = require('gulp-sass')(require('node-sass'));
 const sassGlob = require('gulp-sass-glob');
-const formatHtml = require('gulp-format-html');
+//const formatHTML = require('gulp-format-html');
 //const gutil = require('gulp-util');
 const rename = require("gulp-rename");
 const imageResize = require('gulp-image-resize');
@@ -30,6 +30,7 @@ const fs = require('fs')
 const path = require('path');
 let baseHref = '';
 let blockPrefix = "landing";
+
 
 //get command line parameters after some specified parameter
 function parameters() {
@@ -49,7 +50,7 @@ gulp.task('fileinclude', function() {
       prefix: '@@',
       basepath: '@file'
     }))
-    //.pipe(formatHtml())
+    //.pipe(formatHTML())
     .pipe( touch() )
     .pipe(gulp.dest('./'));
 });
@@ -140,7 +141,7 @@ async function screenshots(dirs = []) {
 		}			
 
 		let content = fs.readFileSync(section,'utf8');
-		let html = `<html><head><base href="../../"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&amp;family=Inter:wght@400;700&amp;" rel="stylesheet"><link rel="stylesheet" href="./css/libs.bundle.css" /><link rel="stylesheet" href="./css/theme.bundle.css" /><link href="/css/screenshots.css" rel="stylesheet"></head><body>${content}</body></html>`;
+		let html = `<html><head><base href="../../"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&amp;family=Inter:wght@400;700&amp;" rel="stylesheet"><link href="/css/style.css" rel="stylesheet"><link href="/css/screenshots.css" rel="stylesheet"></head><body>${content}</body></html>`;
 		fs.writeFileSync(sectionScreenshot, html);
 		
 		//await page.setContent(html, {"waitUntil":"networkidle0"});
@@ -246,7 +247,7 @@ let sectionsSortOrder = [ "hero", "features",  "banner", "services"];
 function sections(type = "section", dirs = []) {
 	let sectionsDir = path.resolve(`./${type}s/`);
 	let screenshotDir = path.resolve("./screenshots/");
-	let styleCss = path.resolve("./css/theme.css");
+	let styleCss = path.resolve("./css/style.css");
 	let baseDir = path.resolve(".");
 	let dir = [];
 	let sectionsJs = '';
@@ -275,7 +276,7 @@ function sections(type = "section", dirs = []) {
 		let name;
 		let id;
 		let html;
-		let sectionsHtml = '<html><head><base src="../"><link href="../css/style.bundle.css" rel="stylesheet"><link href="../css/screenshots.css" rel="stylesheet"></head><body>';
+		let sectionsHtml = '<html><head><base src="../"><link href="../css/style.css" rel="stylesheet"><link href="../css/screenshots.css" rel="stylesheet"></head><body>';
 		let image = '';
 		
 		let sections = [];

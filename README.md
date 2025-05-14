@@ -1,37 +1,33 @@
-# Muse - Bootstrap 5 HTML Responsive One-Page Creative Portfolio Template
+# [AboutMe - Personal Website Template](https://preview.easetemplate.com/aboutme/)
+
+![AboutMe - Personal Website Template](https://user-images.githubusercontent.com/30169935/231987845-1895e4ac-b07d-4d1f-b2b1-f9731b5adcc4.jpg)
+
+Simple personal website templates free, About me is the free personal website bootstrap template. Built with Bootstrap 5.
+AboutMe is a free and open source for your any purpose of use. Curated By [Easetemplate](https://easetemplate.com/)
 
 ## [Vvveb CMS](https://www.vvveb.com) theme.
 
-👉🏻 [Theme page](https://themes.vvveb.com/product/muse) 
+👉🏻 [Theme page](https://themes.vvveb.com/product/cohub) 
 👉🏻 [Theme development documentation](http://dev.vvveb.com/theme-introduction)
 
 Use this template either as a standalone Bootstrap 5 template or as a Vvveb CMS theme.
 
----
+[About ME](https://preview.easetemplate.com/aboutme/)
 
-## Overview
-Muse is a one-page responsive HTML Bootstrap 5 template for graphic designers and illustrators to showcase their work.
-The template comes with a custom modal that pulls in the correct image and project description, a custom animated slide-out menu, client testimonials widget, skills widget and experience widget.
+## Workflow
 
-<strong><a href="https://muse-html-bootstrap.vercel.app/">View Demo</a> | <a href="https://github.com/Vvveb/muse/archive/main.zip">Download ZIP</a></strong>
+This product is built using the following widely used technologies:
 
-![Bootstrap 5 Responsive HTML One-Page Portfolio Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/muse-html/home.jpg "Muse | Responsive Bootstrap 5 One-Page Portfolio Template")
+- Most popular CSS Framework [Bootstrap 5](https://getbootstrap.com/)
+ 
 
-## Table of contents
+## Table of Contents
 
-- [Requirements](#requirements)
-- [Quick Start](#quick-start)
-- [Template Pages](#template-pages)
-- [Demo Link](#demo-link)
-- [Template Key Features](#template-key-features)
-- [Template File Structure](#template-file-structure)
-- [Handlebars](#handlebars)
-- [Template JSON Data](#template-json-data)
-- [Customise Template Styles](#customise-template-styles)
-- [Create New Pages](#create-new-pages)
-- [Bootstrap Documentation](#bootstrap-documentation)
-- [Credits](#credits)
-- [Contact Us](#contact-us)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Technical Support or Questions](#technical-support-or-questions)
 
 
 ## Build
@@ -65,50 +61,38 @@ npm run gulp screenshots
 
 - Clone the repo and run it.
 ```bash
-git clone https://github.com/Vvveb/muse/
-cd muse
+git clone https://github.com/Vvveb/about-me-personal-portfolio/edit/
+cd cohub
 npm i
 npm run gulp
 ```
 
-## Template Pages
-The template consists of a single page:
-
-* Homepage
-
-To keep code repetition to a minimum, we've used Handlebars.js as the templating engine and partials to quickly add the same code to different pages. We also use a Handlebars plugin for JSON data - this allows us to use loops and output a single HTML code block instead of repeating the same HTML.
 
 
-## Demo Link
-[Demo URL](https://muse-html-bootstrap.vercel.app/)
+## Documentation
 
 
-## Template Key Features
+## File Structure
+Within the download you'll find the following directories and files:
 
-* Built with Bootstrap 5
-* Fully responsive
-* My Portfolio component with custom modal display
-* Animated Slideout menu component
-* My experience component
-* My skills component
-* Client testmonials component
+```
+AboutMe Personal Website Template
 
+├── src
+    │   ├── images
+    |   ├── js
+    │   ├── scss
+    |       ├── theme
+    |       ├── theme.scss
+    ├── index.html
+    ├── vite.config.js
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
 
+```
 
-## Bootstrap Documentation
-Bootstrap already has a comprehensive documentation site that will guide you in setting up and using all default Bootstrap features. Bootstrap 5 is fully integrated to our template's source code. Please refer to Bootstrap's doc site first for any default Bootstrap features: [Visit Bootstrap's Doc Site](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+## Technical Support or Questions
 
-
-## Credits
-[Bootstrap](https://getbootstrap.com/)
-
-[AOS.js](https://michalsnik.github.io/aos/)
-
-[Unsplash](https://unsplash.com/)
-
-[Freepik](https://www.freepik.com/)
-
-[Swiper.js](https://swiperjs.com/)
-
-## Contact Us
-You can find our website [here](https://www.pixelrocket.store) or you can email us at support@pixelrocket.store
+If you have questions or need help integrating the product please [contact us](https://easetemplate.com/).
+[Support](https://easetemplate.com/)
