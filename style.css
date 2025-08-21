@@ -1,0 +1,102 @@
+body {
+    font-family: 'Electrolize', sans-serif;
+    background-color: #0A0A0A;
+    color: #90F0FF;
+    overflow-x: hidden;
+    cursor: none; /* Hide default cursor */
+}
+.custom-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 9999;
+    transition: transform 0.1s ease-out, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00FFFF;
+}
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF00FF;
+    opacity: 0.7;
+}
+.text-glitch {
+    text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF;
+    animation: glitch 1s infinite;
+}
+@keyframes glitch {
+    0% { text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF; }
+    50% { text-shadow: -1px -1px 0 #FF00FF, 1px 1px 0 #00FFFF; }
+    100% { text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF; }
+}
+.nav-link {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+    color: #FF69B4;
+    text-shadow: 0 0 8px #FF69B4, 0 0 16px #FF69B4;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    left: -0.5rem;
+    top: 0.25rem;
+    background-color: #00FFFF;
+    border: 3px solid #0A0A0A;
+    box-shadow: 0 0 10px #00FFFF;
+    transition: box-shadow 0.3s;
+}
+.timeline-item.active::before {
+    box-shadow: 0 0 10px #FF69B4, 0 0 20px #FF69B4, 0 0 30px #FF69B4;
+}
+.timeline-item {
+    border-left: 2px solid #333;
+}
+.interactive-card {
+    border: 1px solid #1a1a1a;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.4s ease;
+    transform-style: preserve-3d;
+}
+.interactive-card:hover {
+    border-color: #00FFFF;
+    box-shadow: 0 0 15px #00FFFF, 0 0 25px #00FFFF inset;
+}
+.skill-chip {
+    border: 1px solid #1a1a1a;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.skill-chip:hover {
+    border-color: #FF00FF;
+    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF inset;
+    transform: translateY(-5px);
+}
+/* Scroll Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Typing effect */
+.typing-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.5rem;
+    background-color: #FF69B4;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
