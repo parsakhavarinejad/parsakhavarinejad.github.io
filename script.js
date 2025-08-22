@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const skillsContainer = document.getElementById('skills-container');
         for (const category in skillsData) {
             const categoryDiv = document.createElement('div');
-            categoryDiv.className = 'interactive-card p-6 rounded-lg border border-[#FF00FF] bg-[#0F0F0F] shadow-lg shadow-[#FF00FF]/20 flex flex-col items-center';
+            categoryDiv.className = 'interactive-card p-5 rounded-lg border border-[#FF00FF] bg-[#0F0F0F] shadow-lg shadow-[#FF00FF]/30 flex flex-col items-center';
 
             const categoryHeader = document.createElement('h3');
             categoryHeader.className = 'text-lg font-bold text-[#00FFFF] mb-4';
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             skillsData[category].forEach(skill => {
                 const skillChip = document.createElement('div');
-                skillChip.className = 'skill-chip py-1 px-3 rounded-md bg-[#0A0A0A] text-center font-medium text-xs text-gray-300';
+                skillChip.className = 'skill-chip py-1 px-2 rounded-md bg-[#0A0A0A] text-center font-medium text-xs text-gray-300';
                 skillChip.textContent = skill;
                 skillsGrid.appendChild(skillChip);
             });
