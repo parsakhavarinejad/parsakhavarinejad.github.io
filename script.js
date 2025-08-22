@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             location: 'Tehran, Iran',
             details: [
                 '<strong>Thesis:</strong> A Deep Learning Approach for Echocardiography Video Super-Resolution.',
-                '<strong>Relevant Courses:</strong> Deep Learning, Data Mining, Integer Programming, Multivariate Statistical Analysis, Design of Experiments.',
+                '<strong>Relevant Courses:</strong> Deep Learning, Data Mining, Integer Programming, Multivariate Statistical Analysis, Design of Experiments, Queuing Theory, Sequencing and Scheduling, Facility Layout',
                 '<strong>Teaching Assistant:</strong> Deep Learning (Fall 2024), Data Mining (Fall 2024 & Winter 2025).'
             ]
         },
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             location: 'Tehran, Iran',
             details: [
                 '<strong>Capstone Project:</strong> A Hybrid Deep Learning Approach for Stock Price Prediction.',
-                '<strong>Relevant Courses:</strong> Basic and Advanced Python, Data Mining Algorithms, Graph Theory, Linear Algebra, Probability and Statistics.',
+                '<strong>Relevant Courses:</strong> Linear Optimization 1&2, Non-linear Optimization, Basic and Advanced Python, Data Mining Algorithms, Graph Theory, Basic and Advanced Linear Algebra, Probability and Statistics, Game Theory 1&2. Mathematical Laboratory',
                 '<strong>Teaching Assistant:</strong> Calculus 1 & 2, Differential Equations, Game Theory 1.'
             ]
         }
@@ -79,13 +79,34 @@ document.addEventListener('DOMContentLoaded', function () {
         'DevOps & MLOps': ['Docker', 'Jenkins', 'Airflow', 'Grafana', 'CI/CD'],
         'Cloud & Version Control': ['AWS', 'Git', 'GitHub', 'Linux', 'Bash Scripting']
     };
-    
+
+    const projectsData = [
+        {
+            image: 'images/project-image-1.jpg',
+            title: 'MSc Thesis: Deep Learning for Echocardiography Super-Resolution',
+            description: 'Designed HARN-ESRGAN, a lightweight GAN-based architecture for ultrasound image enhancement. Article and code are in preparation for publication.',
+            tags: ['PyTorch', 'GANs', 'Computer Vision', 'Medical Imaging'],
+            liveLink: '#',
+            codeLink: '#'
+        },
+        {
+            image: 'images/project-image-2.jpg',
+            title: 'BSc Capstone: Hybrid Deep Learning for Stock Price Prediction',
+            description: 'Developed a hybrid model combining different deep learning techniques to forecast stock price movements, leveraging historical data and technical indicators.',
+            tags: ['TensorFlow', 'LSTM', 'Data Analysis', 'Finance'],
+            liveLink: '#',
+            codeLink: 'https://github.com/parsakhavarinejad/your-repo'
+        },
+        // To add a new project, copy one of the objects above and paste it here!
+    ];
+
     // --- INITIALIZATION ---
     populateTimeline('experience-timeline', experienceData, handleTimelineClick);
     populateTimeline('education-timeline', educationData, handleTimelineClick);
     handleTimelineClick(experienceData[0].id, 'experience-timeline');
     handleTimelineClick(educationData[0].id, 'education-timeline');
     populateSkills();
+    populateProjects(); // <-- New function call
     initMobileMenu();
     initScrollObserver();
     initTypingEffect();
@@ -98,9 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /**
      * Populates a timeline component with data.
-     * @param {string} containerId - The ID of the timeline container element.
-     * @param {Array<Object>} data - The array of data objects.
-     * @param {Function} clickHandler - The function to call on item click.
      */
     function populateTimeline(containerId, data, clickHandler) {
         const timelineContainer = document.getElementById(containerId);
@@ -123,9 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /**
      * Updates the details view for a timeline.
-     * @param {string} detailsContainerId - The ID of the details container.
-     * @param {Array<Object>} data - The source data array.
-     * @param {string} id - The ID of the selected item.
      */
     function updateDetails(detailsContainerId, data, id) {
         const item = data.find(d => d.id === id);
@@ -145,8 +160,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /**
      * Handles clicks on timeline items.
-     * @param {string} id - The ID of the clicked item.
-     * @param {string} timelineContainerId - The ID of the parent timeline.
      */
     function handleTimelineClick(id, timelineContainerId) {
         const timelineContainer = document.getElementById(timelineContainerId);
@@ -187,6 +200,42 @@ document.addEventListener('DOMContentLoaded', function () {
             categoryDiv.appendChild(skillsGrid);
             skillsContainer.appendChild(categoryDiv);
         }
+    }
+
+    /**
+     * Populates the projects grid from the projectsData object.
+     */
+    function populateProjects() {
+        const projectsGrid = document.getElementById('projects-grid');
+        if (!projectsGrid) return;
+
+        projectsData.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'interactive-card flex flex-col bg-[#0F0F0F] rounded-lg overflow-hidden shadow-md';
+
+            const tagsHtml = project.tags.map(tag =>
+                `<span class="bg-[#0A0A0A] border border-[#333] text-[#90F0FF] text-xs font-medium mr-2 mb-2 px-2.5 py-0.5 rounded-full">${tag}</span>`
+            ).join('');
+
+            projectCard.innerHTML = `
+                <img src="${project.image}" alt="Project image for ${project.title}" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0A0A0A/00FFFF?text=PROJECT';" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl mb-2 text-[#00FFFF]">${project.title}</h3>
+                    <p class="text-gray-400 text-sm flex-grow">${project.description}</p>
+                    <div class="mt-4 mb-4 flex flex-wrap">
+                        ${tagsHtml}
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-[#333] flex items-center gap-4">
+                        <a href="${project.codeLink}" target="_blank" class="text-[#FF69B4] hover:text-[#00FFFF] transition-colors font-semibold">View Code</a>
+                        <a href="${project.liveLink}" target="_blank" class="text-[#FF69B4] hover:text-[#00FFFF] transition-colors font-semibold">Live Demo</a>
+                    </div>
+                </div>
+            `;
+            projectsGrid.appendChild(projectCard);
+        });
+
+        // Re-initialize the tilt effect for the new cards
+        initCardTilt();
     }
     
     /**
