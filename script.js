@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'One-Section-Lecture: Continuous-Time Markov Chains',
             description: 'A lesson plan defining Continuous-Time Markov Chains (CTMCs) and explaining key concepts such as state transition rates, the Chapman-Kolmogorov equations, and steady-state analysis.',
             tags: ['Markov Chains', 'Stochastic Processes', 'Queuing Theory', 'CTMC', 'Probability'],
-            Document: [{ name: 'Document', url: 'https://drive.google.com/file/d/1fK-eQyXDeL2dzQ5JognolcCJ-egqcTh4/view?usp=sharing'}]
+            Document: [{ name: 'Document', url: 'https://drive.google.com/file/d/1ShFCcjPz6MD5inN01Ckgt__EQ9rlt1ew/view?usp=drive_link'}]
         },
 
         // === Game Theory ===
