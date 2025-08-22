@@ -2,7 +2,6 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <!-- FIX: Corrected the viewport meta tag for full compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PARSA KHAVARINEJAD //</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,7 +24,6 @@
                     <a href="#skills" class="nav-link font-medium">// SKILLS</a>
                     <a href="#education" class="nav-link font-medium">// EDUCATION</a>
                     <a href="#projects" class="nav-link font-medium">// PROJECTS</a>
-                    <!-- FIXED: Restored the Download Resume Button -->
                     <a href="https://drive.google.com/file/d/1qetw1FRbEnVZZCZpyTWGzvqhGBJzsoCJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="nav-link font-medium border border-[#00FFFF] px-4 py-2 rounded-md hover:bg-[#00FFFF] hover:text-[#0A0A0A] transition-colors duration-300">// DOWNLOAD RESUME</a>
                 </nav>
                 <button id="mobile-menu-button" class="md:hidden text-[#90F0FF] focus:outline-none">
@@ -41,12 +39,10 @@
             <a href="#skills" class="block py-2 px-6 hover:bg-[#1a1a1a]">// SKILLS</a>
             <a href="#education" class="block py-2 px-6 hover:bg-[#1a1a1a]">// EDUCATION</a>
             <a href="#projects" class="block py-2 px-6 hover:bg-[#1a1a1a]">// PROJECTS</a>
-            <!-- FIXED: Corrected the styling for the mobile resume link -->
             <a href="https://drive.google.com/file/d/1qetw1FRbEnVZZCZpyTWGzvqhGBJzsoCJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block py-2 px-6 hover:bg-[#1a1a1a]">// DOWNLOAD RESUME</a>
         </div>
     </header>
 
-    <!-- FIX: Corrected pt-22 to pt-24, a valid Tailwind class -->
     <main class="pt-24">
         <div class="container mx-auto px-4 sm:px-6 py-12 md:py-16">
             <div class="w-full space-y-24">
@@ -54,7 +50,6 @@
                 <section id="about" class="flex flex-col md:flex-row items-center gap-8 md:gap-12 text-center md:text-left reveal">
                     <img src="profile.jpg" alt="Parsa Khavarinejad" onerror="this.onerror=null;this.src='https://placehold.co/224x224/0A0A0A/00FFFF?text=PK';" class="w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-[#00FFFF] object-cover shadow-lg shadow-[#00FFFF]/30 shrink-0">
                     <div>
-                        <!-- FIX: Made font size responsive to prevent overflow on small screens -->
                         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-[#00FFFF] text-glitch break-words" style="font-family: 'Orbitron', sans-serif;">PARSA KHAVARINEJAD</h1>
                         <p class="mt-2 text-xl md:text-2xl font-bold text-[#FF69B4] tracking-wider">
                             <span id="typing-text"></span><span class="typing-cursor"></span>
@@ -95,14 +90,15 @@
                                <div id="education-timeline" class="relative pl-8 ml-2"></div>
                          </div>
                          <div id="education-details" class="md:w-2/3 p-6 rounded-lg border border-[#FF69B4] bg-[#0F0F0F] shadow-lg shadow-[#FF69B4]/20">
-                                 <p class="text-gray-400">Select a datastream from the timeline to access files...</p>
+                                   <p class="text-gray-400">Select a datastream from the timeline to access files...</p>
                          </div>
                     </div>
                 </section>
 
-                <section id="projects" class="reveal">
+                <!-- ✅ FIXED: Removed the "reveal" class to prevent animation from hiding the section on mobile -->
+                <section id="projects">
                     <h2 class="text-3xl font-bold text-center mb-12" style="font-family: 'Orbitron', sans-serif;">// KEY PROJECTS & RESEARCH</h2>
-                    <div id="projects-grid" class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         <!-- Project cards will be injected here by script.js -->
                     </div>
                 </section>
