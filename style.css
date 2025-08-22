@@ -12,7 +12,7 @@ body {
     pointer-events: none;
     border-radius: 50%;
     z-index: 9999;
-    transition: transform 0.1s ease-out, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease-out, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
 }
 .cursor-dot {
     width: 8px;
@@ -20,26 +20,26 @@ body {
     background-color: #00FFFF;
 }
 .cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #FF00FF;
-    opacity: 0.7;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ff00ff;
+    opacity: 0.3;
 }
 .text-glitch {
-    text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF;
+    text-shadow: 2.5px 2.5px 0 #FF00FF, -1px -1px 0 #00FFFF;
     animation: glitch 1s infinite;
 }
 @keyframes glitch {
-    0% { text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF; }
+    0% { text-shadow: 2px 2px 0 #FF00FF, -1px -1px 0 #00FFFF; }
     50% { text-shadow: -1px -1px 0 #FF00FF, 1px 1px 0 #00FFFF; }
     100% { text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF; }
 }
 .nav-link {
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.5s ease, text-shadow 0.3s ease;
 }
 .nav-link:hover, .nav-link.active {
     color: #FF69B4;
-    text-shadow: 0 0 8px #FF69B4, 0 0 16px #FF69B4;
+    text-shadow: 1 1 8px #FF69B4, 0 0 16px #6980ff;
 }
 .timeline-item::before {
     content: '';
@@ -62,7 +62,7 @@ body {
 }
 .interactive-card {
     border: 1px solid #1a1a1a;
-    transition: border-color 0.3s, box-shadow 0.3s, transform 0.4s ease;
+    transition: border-color 0.4s, box-shadow 0.4s, transform 0.4s ease;
     transform-style: preserve-3d;
 }
 .interactive-card:hover {
