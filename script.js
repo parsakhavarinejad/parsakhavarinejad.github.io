@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Collaborated with a cross-functional AI team to build an automated cryptocurrency trading bot using machine learning and reinforcement learning.',
                 'Researched, selected, and optimized forecasting algorithms for high-frequency trading.',
                 'Designed and maintained a PostgreSQL system for real-time and historical market data.',
-                'Developed hybrid trading strategies combining rule-based logic, ML, and RL.',
+                'Worked on hybrid trading strategies combining rule-based logic, ML, and RL.',
                 'Performed backtesting, forward testing, and A/B experiments to validate strategy performance.'
             ]
         }
@@ -90,12 +90,12 @@ document.addEventListener('DOMContentLoaded', function () {
             codeLink: '#'
         },
         {
-            image: 'images/project-image-2.jpg',
+            image: 'images/bsc-project.png',
             title: 'BSc Capstone: Hybrid Deep Learning for Stock Price Prediction',
-            description: 'Developed a hybrid model combining different deep learning techniques to forecast stock price movements, leveraging historical data and technical indicators.',
-            tags: ['TensorFlow', 'LSTM', 'Data Analysis', 'Finance'],
-            liveLink: '#',
-            codeLink: 'https://github.com/parsakhavarinejad/your-repo'
+            description: 'Researched on a hybrid model combining different deep learning techniques to forecast stock price movements, leveraging historical data and technical indicators.',
+            tags: ['TensorFlow', 'LSTM', 'NLP', 'Stock Price Prediction'],
+            liveLink: 'https://drive.google.com/file/d/1-49sBcZUqQdGTLdnojijUX-qtRf4LYQb/view?usp=sharing',
+            codeLink: '#'
         },
         // To add a new project, copy one of the objects above and paste it here!
     ];
