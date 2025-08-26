@@ -164,6 +164,13 @@ document.addEventListener('DOMContentLoaded', function () {
             Document: [{ name: 'Document', url: 'https://drive.google.com/file/d/1ZjAFL6rkgvE03Fz1c51QIEJCRUMzTuXS/view?usp=sharing'}]
         },
         {
+            image: 'images/vits-registers.png',
+            title: 'Presentation: Why ViTs need registers and why they don\'t?',
+            description: 'This presentation explains the problem of high-norm token artifacts in Vision Transformers, contrasting the original solution of retraining with learned registers against a newer, training-free "test-time" approach that achieves comparable results.',
+            tags: ['Deep Learning', 'Vision Transformers', 'Computer Vision', 'Register Tokens'],
+            Document: [{ name: 'Slide', url: 'https://drive.google.com/file/d/1AgnKZMTDgT2COnCBKJlQtrHOWzDsI--g/view?usp=sharing'}]
+        },
+        {
             image: 'images/efficientnetv2.webp',
             title: 'Presentation: EfficientNetV2 - Smaller Models, Faster Training',
             description: 'This presentation introduces EfficientNetV2, a family of convolutional neural networks, detailing its architecture and demonstrating its enhanced parameter efficiency and faster training speeds compared to previous models.',
