@@ -2,24 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- DATA OBJECTS ---
     const experienceData = [
         {
-            id: 'matt3r',
-            role: 'Machine Learning Engineer',
-            company: 'MATT3R',
-            period: 'Mar 2025 - Present',
-            location: 'Vancouver, BC, Canada',
-            details: [
-                'Work on IMU signal processing for the K3Y device, focused on vehicle maneuver detection in Tesla and other electric vehicles.',
-                'Design, implement, and test machine learning models for real-time inference on edge devices.',
-                'Deploy models to production and monitor their performance in live environments.',
-                'Conduct R&D on advanced feature engineering, model optimization, and signal processing techniques.',
-                'Collaborate with cross-functional teams including CV, Audio, embedded engineers, and product managers.'
-            ]
-        },
-        {
             id: 'aria',
             role: 'Data Analyst and Planning Consultant',
             company: 'AriaShahd Saedinia',
-            period: 'Mar 2025 - Present',
+            period: 'Apr 2024 - Present',
             location: 'Tehran, Iran',
             details: [
                 'Design comprehensive Power BI dashboards for business analysis, providing insights into sales trends and supply chain performance.',
@@ -27,6 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Develop sales forecasting models to support supply chain and production planning.',
                 'Collaborate with cross-functional teams to enhance supply chain planning and operational efficiency.',
                 'Hold weekly S&OP meetings with managers to align planning and execution.'
+            ]
+        },
+        {
+            id: 'matt3r',
+            role: 'Machine Learning Engineer',
+            company: 'MATT3R',
+            period: 'Mar 2025 - Sep 2025',
+            location: 'Vancouver, BC, Canada',
+            details: [
+                'Work on IMU signal processing for the K3Y device, focused on vehicle maneuver detection in Tesla and other electric vehicles.',
+                'Design, implement, and test machine learning models for real-time inference on edge devices.',
+                'Deploy models to production and monitor their performance in live environments.',
+                'Conduct R&D on advanced feature engineering, model optimization, and signal processing techniques.',
+                'Collaborate with cross-functional teams including CV, Audio, embedded engineers, and product managers.'
             ]
         },
         {
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initMobileMenu();
     initScrollObserver();
     initTypingEffect();
-    initCardTilt();
+    // initCardTilt(); //
     initCustomCursor();
     initActiveNavOnScroll();
 
@@ -423,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function () {
             projectsGrid.appendChild(projectCard);
         });
 
-        initCardTilt(); // Re-initialize tilt effect for new cards
+        //initCardTilt(); // Re-initialize tilt effect for new cards
     }
 
 
