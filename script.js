@@ -115,6 +115,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // === Other Data Science Code and Research ===
         {
+            image: 'images/OR-Case.webp',
+            title: 'Operations Research Case Studies',
+            description: 'A curated repository of Operations Research (OR) case studies with practical applications and examples.',
+            tags: [],
+            Document: [
+                { name: 'GitHub Repository', url: 'https://github.com/parsakhavarinejad/Operations-Research-Case-Studies' }
+            ]
+        },
+        {
             image: 'images/learning_to_rank.webp',
             title: 'Code: Learning to Rank (L2R) for Product Relevance',
             description: 'A comprehensive Learning to Rank (L2R) system for e-commerce, using XGBoost and LightGBM Ranker to score and rank product relevance based on user search queries.',
