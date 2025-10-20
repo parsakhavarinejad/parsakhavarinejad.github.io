@@ -84,10 +84,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // === Data Science: Medical Imaging & GANs ===
         {
             image: 'images/hadesrgan.webp',
-            title: 'MSc Thesis: Deep Learning for Echocardiography Super-Resolution',
-            description: 'Designed HADESR-GAN, a lightweight GAN-based architecture for medical image enhancement. Article and code are in preparation for publication.',
+            title: 'Paper and MSc Thesis: HADESR-GAN — A Lightweight Hybrid Attention-based GAN for Medical Image Super-Resolution',
+            description: 'Developed HADESR-GAN, a lightweight GAN-based architecture for medical image enhancement. The paper has been submitted to *Nature – Scientific Reports*.',
             tags: ['PyTorch', 'GANs', 'Computer Vision', 'Medical Imaging'],
-            Document: [{ name: 'Abstract and Introduction', url: 'https://drive.google.com/file/d/17uASAvXpSnKULEACQHKC2witXGM5x7-K/view?usp=sharing' }]
+            Document: [
+                { 
+                    name: 'Abstract and Introduction', 
+                    url: 'https://drive.google.com/file/d/17uASAvXpSnKULEACQHKC2witXGM5x7-K/view?usp=sharing' 
+                }
+            ]
         },
         {
             image: 'images/medsrgan.webp',
@@ -118,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'images/OR-Case.webp',
             title: 'Operations Research Case Studies',
             description: 'A curated repository of Operations Research (OR) case studies with practical applications and examples.',
-            tags: [Operations Research, Optimization, Data Analytics],
+            tags: ["Operations Research", "Optimization", "Data Analytics"],
             Document: [
                 { name: 'GitHub Repository', url: 'https://github.com/parsakhavarinejad/Operations-Research-Case-Studies' }
             ]
