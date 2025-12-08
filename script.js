@@ -306,8 +306,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 div.classList.add('active');
             }
             div.innerHTML = `
-                <h4 class="font-bold text-[#FF69B4]">${item.role || item.degree}</h4>
-                <p class="text-sm text-[#00FFFF]">${item.company || item.university}</p>
+                <h4 class="font-bold text-[#d6b574]">${item.role || item.degree}</h4>
+                <p class="text-sm text-[#8fb0e8]">${item.company || item.university}</p>
                 <p class="text-xs text-gray-500">${item.period}</p>
             `;
             div.addEventListener('click', () => clickHandler(item.id, containerId));
@@ -323,8 +323,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const detailsContainer = document.getElementById(detailsContainerId);
         if (item) {
             const detailsHtml = `
-                <h3 class="text-xl font-bold text-[#FF69B4]">${item.role || item.degree}</h3>
-                <p class="text-md font-medium text-[#00FFFF]">${item.company || item.university} | ${item.location}</p>
+                <h3 class="text-xl font-bold text-[#d6b574]">${item.role || item.degree}</h3>
+                <p class="text-md font-medium text-[#8fb0e8]">${item.company || item.university} | ${item.location}</p>
                 <p class="text-sm text-gray-500 mb-4">${item.period}</p>
                 <ul class="list-disc pl-5 space-y-2 text-gray-300">
                     ${item.details.map(d => `<li>${d}</li>`).join('')}
@@ -355,23 +355,23 @@ document.addEventListener('DOMContentLoaded', function () {
     function populateSkills() {
         const skillsContainer = document.getElementById('skills-container');
         for (const category in skillsData) {
-            const categoryDiv = document.createElement('div');
-            categoryDiv.className = 'interactive-card p-5 rounded-lg border border-[#FF00FF] bg-[#0F0F0F] shadow-lg shadow-[#FF00FF]/30 flex flex-col items-center';
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'interactive-card p-5 rounded-lg border border-[#22304a] bg-[#121b2d] shadow-lg shadow-[#8fb0e8]/20 flex flex-col items-center';
 
             const categoryHeader = document.createElement('h3');
-            categoryHeader.className = 'text-lg font-bold text-[#00FFFF] mb-4';
+            categoryHeader.className = 'text-lg font-bold text-[#8fb0e8] mb-4';
             categoryHeader.textContent = category;
             categoryDiv.appendChild(categoryHeader);
 
             const skillsGrid = document.createElement('div');
             skillsGrid.className = 'flex flex-wrap justify-center gap-2';
 
-            skillsData[category].forEach(skill => {
-                const skillChip = document.createElement('div');
-                skillChip.className = 'skill-chip py-1 px-2 rounded-md bg-[#0A0A0A] text-center font-medium text-xs text-gray-300';
-                skillChip.textContent = skill;
-                skillsGrid.appendChild(skillChip);
-            });
+                skillsData[category].forEach(skill => {
+                    const skillChip = document.createElement('div');
+                    skillChip.className = 'skill-chip py-1 px-2 rounded-md text-center font-medium text-xs';
+                    skillChip.textContent = skill;
+                    skillsGrid.appendChild(skillChip);
+                });
 
             categoryDiv.appendChild(skillsGrid);
             skillsContainer.appendChild(categoryDiv);
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         projectsData.forEach(project => {
             const projectCard = document.createElement('div');
-            projectCard.className = 'interactive-card group flex flex-col bg-[#0F0F0F] rounded-lg overflow-hidden shadow-md border border-transparent hover:border-[#00FFFF] transition-all duration-300';
+            projectCard.className = 'interactive-card group flex flex-col bg-[#0F0F0F] rounded-lg overflow-hidden shadow-md border border-transparent hover:border-[#8fb0e8] transition-all duration-300';
 
             const tagsHtml = project.tags.map(tag =>
                 `<span class="bg-[#0A0A0A] border border-[#333] text-[#90F0FF] text-xs font-medium mr-2 mb-2 px-2.5 py-0.5 rounded-full">${tag}</span>`
@@ -413,20 +413,20 @@ document.addEventListener('DOMContentLoaded', function () {
             if (docs.length > 0) {
                 // Case 1 & 2: We have an array of document objects
                 linksHtml = docs.map(doc => 
-                    `<a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="text-[#FF69B4] hover:text-[#00FFFF] transition-colors font-semibold text-sm">${doc.name}</a>`
+                    `<a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="text-[#d6b574] hover:text-[#8fb0e8] transition-colors font-semibold text-sm">${doc.name}</a>`
                 ).join(' | '); // Use a separator for multiple links
             } else if (typeof project.Document === 'string') {
                 // Case 3: It's a single URL string
-                linksHtml = `<a href="${project.Document}" target="_blank" rel="noopener noreferrer" class="text-[#FF69B4] hover:text-[#00FFFF] transition-colors font-semibold text-sm">View Document</a>`;
+                linksHtml = `<a href="${project.Document}" target="_blank" rel="noopener noreferrer" class="text-[#d6b574] hover:text-[#8fb0e8] transition-colors font-semibold text-sm">View Document</a>`;
             }
             // --- END OF FIX ---
 
             projectCard.innerHTML = `
                 <div class="w-full aspect-video overflow-hidden">
-                    <img src="${project.image}" alt="Project image for ${project.title}" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0A0A0A/00FFFF?text=PROJECT';" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <img src="${project.image}" alt="Project image for ${project.title}" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0A0A0A/8fb0e8?text=PROJECT';" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                 </div>
                 <div class="p-4 flex flex-col flex-grow">
-                    <h3 class="font-bold text-lg mb-2 text-[#00FFFF]">${project.title}</h3>
+                    <h3 class="font-bold text-lg mb-2 text-[#8fb0e8]">${project.title}</h3>
                     <p class="text-gray-400 text-sm flex-grow mb-4">${project.description}</p>
                     <div class="mt-auto">
                         <div class="mb-4 flex flex-wrap">${tagsHtml}</div>
@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function initTypingEffect() {
         const textElement = document.getElementById('typing-text');
-        const text = "DATA SCIENTIST & AI DEVELOPER";
+        const text = "APPLIED AI & OPERATIONS RESEARCH";
         let index = 0;
         function type() {
             if (index < text.length) {
@@ -519,6 +519,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function initCustomCursor() {
         const cursorDot = document.querySelector('.cursor-dot');
         const cursorOutline = document.querySelector('.cursor-outline');
+        if (!cursorDot || !cursorOutline) return;
         window.addEventListener('mousemove', (e) => {
             const posX = e.clientX;
             const posY = e.clientY;

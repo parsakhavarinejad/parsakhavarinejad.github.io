@@ -1,45 +1,39 @@
+:root {
+    --background: #0f1625;
+    --surface: #121b2d;
+    --muted-surface: #1a2437;
+    --primary: #c1d4ff;
+    --secondary: #d6b574;
+    --accent: #8fb0e8;
+    --text: #e6e9ef;
+    --muted-text: #c6cedd;
+    --border: #22304a;
+}
+
 body {
-    font-family: 'Electrolize', sans-serif;
-    background-color: #0A0A0A;
-    color: #90F0FF;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
     overflow-x: hidden;
-    cursor: none; /* Hide default cursor */
+    cursor: auto;
+    line-height: 1.7;
 }
+
 .custom-cursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    border-radius: 50%;
-    z-index: 9999;
-    transition: transform 0.2s ease-out, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+    display: none;
 }
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: #00FFFF;
-}
+
+.cursor-dot,
 .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #ff00ff;
-    opacity: 0.3;
-}
-.text-glitch {
-    text-shadow: 2.5px 2.5px 0 #FF00FF, -1px -1px 0 #00FFFF;
-    animation: glitch 1s infinite;
-}
-@keyframes glitch {
-    0% { text-shadow: 2px 2px 0 #FF00FF, -1px -1px 0 #00FFFF; }
-    50% { text-shadow: -1px -1px 0 #FF00FF, 1px 1px 0 #00FFFF; }
-    100% { text-shadow: 1px 1px 0 #FF00FF, -1px -1px 0 #00FFFF; }
+    display: none;
 }
 .nav-link {
-    transition: color 0.5s ease, text-shadow 0.3s ease;
+    color: var(--muted-text);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 .nav-link:hover, .nav-link.active {
-    color: #FF69B4;
-    text-shadow: 1 1 8px #FF69B4, 0 0 16px #6980ff;
+    color: var(--secondary);
+    text-shadow: 0 0 12px rgba(214, 181, 116, 0.25);
 }
 .timeline-item::before {
     content: '';
@@ -49,33 +43,37 @@ body {
     border-radius: 50%;
     left: -0.5rem;
     top: 0.25rem;
-    background-color: #00FFFF;
-    border: 3px solid #0A0A0A;
-    box-shadow: 0 0 10px #00FFFF;
-    transition: box-shadow 0.3s;
+    background-color: var(--secondary);
+    border: 3px solid var(--surface);
+    box-shadow: 0 0 8px rgba(214, 181, 116, 0.35);
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 .timeline-item.active::before {
-    box-shadow: 0 0 10px #FF69B4, 0 0 20px #FF69B4, 0 0 30px #FF69B4;
+    box-shadow: 0 0 10px rgba(193, 212, 255, 0.45), 0 0 20px rgba(214, 181, 116, 0.45);
+    transform: scale(1.05);
 }
 .timeline-item {
-    border-left: 2px solid #333;
+    border-left: 2px solid var(--border);
 }
 .interactive-card {
-    border: 1px solid #1a1a1a;
-    transition: border-color 0.4s, box-shadow 0.4s, transform 0.4s ease;
+    border: 1px solid var(--border);
+    background-color: var(--surface);
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.4s ease;
     transform-style: preserve-3d;
 }
 .interactive-card:hover {
-    border-color: #00FFFF;
-    box-shadow: 0 0 15px #00FFFF, 0 0 25px #00FFFF inset;
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px rgba(143, 176, 232, 0.12);
 }
 .skill-chip {
-    border: 1px solid #1a1a1a;
+    border: 1px solid var(--border);
+    background-color: var(--muted-surface);
+    color: var(--muted-text);
     transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 .skill-chip:hover {
-    border-color: #FF00FF;
-    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF inset;
+    border-color: var(--secondary);
+    box-shadow: 0 0 12px rgba(214, 181, 116, 0.35);
     transform: translateY(-5px);
 }
 /* Scroll Animation */
@@ -93,7 +91,7 @@ body {
     display: inline-block;
     width: 10px;
     height: 1.5rem;
-    background-color: #FF69B4;
+    background-color: var(--secondary);
     animation: blink 0.7s infinite;
 }
 @keyframes blink {
