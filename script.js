@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             location: 'Tehran, Iran',
             details: [
                 '<strong>Thesis:</strong> A Deep Learning Approach for Echocardiography Video Super-Resolution.',
-                '<strong>Relevant Courses:</strong> Deep Learning, Data Mining, Integer Programming, Multivariate Statistical Analysis, Design of Experiments, Queuing Theory, Sequencing and Scheduling, Facility Layout',
+                '<strong>Courses:</strong> Deep Learning, Data Mining, Integer Programming, Multivariate Statistical Analysis, Design of Experiments, Queuing Theory, Sequencing and Scheduling, Facility Layout',
                 '<strong>Teaching Assistant:</strong> Deep Learning (Fall 2024), Data Mining (Fall 2024 & Winter 2025).'
             ]
         },
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             location: 'Tehran, Iran',
             details: [
                 '<strong>Capstone Project:</strong> A Hybrid Deep Learning Approach for Stock Price Prediction.',
-                '<strong>Relevant Courses:</strong> Linear Optimization 1&2, Non-linear Optimization, Basic and Advanced Python, Data Mining Algorithms, Graph Theory, Basic and Advanced Linear Algebra, Probability and Statistics, Game Theory 1&2. Mathematical Laboratory',
+                '<strong>Courses:</strong> Linear Optimization 1&2, Non-linear Optimization, Basic and Advanced Python, Data Mining Algorithms, Graph Theory, Basic and Advanced Linear Algebra, Probability and Statistics, Game Theory 1&2. Mathematical Laboratory',
                 '<strong>Teaching Assistant:</strong> Calculus 1 & 2, Differential Equations, Game Theory 1.'
             ]
         }
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h3 class="text-xl font-bold text-[#227c9d]">${item.role || item.degree}</h3>
                 <p class="text-md font-medium text-[#17c3b2]">${item.company || item.university} | ${item.location}</p>
                 <p class="text-sm text-gray-500 mb-4">${item.period}</p>
-                <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                <ul class="list-disc pl-5 space-y-2 text-[#577399]">
                     ${item.details.map(d => `<li>${d}</li>`).join('')}
                 </ul>
             `;
