@@ -1,13 +1,14 @@
 :root {
-    --background: #0f1625;
-    --surface: #121b2d;
-    --muted-surface: #1a2437;
-    --primary: #c1d4ff;
-    --secondary: #d6b574;
-    --accent: #8fb0e8;
-    --text: #e6e9ef;
-    --muted-text: #c6cedd;
-    --border: #22304a;
+    --background: #fef9ef;
+    --surface: #ffffff;
+    --muted-surface: #fff4dd;
+    --primary: #227c9d;
+    --secondary: #17c3b2;
+    --accent: #fe6d73;
+    --highlight: #ffcb77;
+    --text: #1f2933;
+    --muted-text: #4a6072;
+    --border: #e4edf3;
 }
 
 body {
@@ -32,8 +33,8 @@ body {
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 .nav-link:hover, .nav-link.active {
-    color: var(--secondary);
-    text-shadow: 0 0 12px rgba(214, 181, 116, 0.25);
+    color: var(--accent);
+    text-shadow: 0 0 12px rgba(254, 109, 115, 0.2);
 }
 .timeline-item::before {
     content: '';
@@ -43,13 +44,13 @@ body {
     border-radius: 50%;
     left: -0.5rem;
     top: 0.25rem;
-    background-color: var(--secondary);
+    background-color: var(--highlight);
     border: 3px solid var(--surface);
-    box-shadow: 0 0 8px rgba(214, 181, 116, 0.35);
+    box-shadow: 0 0 8px rgba(255, 203, 119, 0.45);
     transition: box-shadow 0.3s, transform 0.3s;
 }
 .timeline-item.active::before {
-    box-shadow: 0 0 10px rgba(193, 212, 255, 0.45), 0 0 20px rgba(214, 181, 116, 0.45);
+    box-shadow: 0 0 10px rgba(34, 124, 157, 0.3), 0 0 20px rgba(255, 203, 119, 0.4);
     transform: scale(1.05);
 }
 .timeline-item {
@@ -62,8 +63,8 @@ body {
     transform-style: preserve-3d;
 }
 .interactive-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 10px 25px rgba(143, 176, 232, 0.12);
+    border-color: var(--secondary);
+    box-shadow: 0 10px 25px rgba(34, 124, 157, 0.15);
 }
 .skill-chip {
     border: 1px solid var(--border);
@@ -72,8 +73,8 @@ body {
     transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 .skill-chip:hover {
-    border-color: var(--secondary);
-    box-shadow: 0 0 12px rgba(214, 181, 116, 0.35);
+    border-color: var(--highlight);
+    box-shadow: 0 0 12px rgba(255, 203, 119, 0.35);
     transform: translateY(-5px);
 }
 /* Scroll Animation */
@@ -91,7 +92,7 @@ body {
     display: inline-block;
     width: 10px;
     height: 1.5rem;
-    background-color: var(--secondary);
+    background-color: var(--accent);
     animation: blink 0.7s infinite;
 }
 @keyframes blink {
