@@ -309,6 +309,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h4 class="font-bold text-[#227c9d]">${item.role || item.degree}</h4>
                 <p class="text-sm text-[#17c3b2]">${item.company || item.university}</p>
                 <p class="text-xs text-gray-500">${item.period}</p>
+                <ul class="list-disc pl-5 space-y-2 text-[#98C1D9]">
             `;
             div.addEventListener('click', () => clickHandler(item.id, containerId));
             timelineContainer.appendChild(div);
@@ -326,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h3 class="text-xl font-bold text-[#227c9d]">${item.role || item.degree}</h3>
                 <p class="text-md font-medium text-[#17c3b2]">${item.company || item.university} | ${item.location}</p>
                 <p class="text-sm text-gray-500 mb-4">${item.period}</p>
-                <ul class="list-disc pl-5 space-y-2 text-[#577399]">
+                <ul class="list-disc pl-5 space-y-2 text-blue">
                     ${item.details.map(d => `<li>${d}</li>`).join('')}
                 </ul>
             `;
