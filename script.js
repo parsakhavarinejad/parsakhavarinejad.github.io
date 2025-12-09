@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Document: [
                 { 
                     name: 'Abstract and Introduction', 
-                    url: 'https://drive.google.com/file/d/17uASAvXpSnKULEACQHKC2witXGM5x7-K/view?usp=sharing' 
+                    url: 'https://drive.google.com/file/d/1XToxRrewf4k6WXKU2s71mtRgGEUbKPh6/view?usp=sharing' 
                 }
             ]
         },
@@ -379,9 +379,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    /**
-     * ✅ FIXED: Populates the projects section, correctly handling all link formats.
-     */
+ 
     function populateProjects() {
         const projectsGrid = document.getElementById('projects-grid');
         if (!projectsGrid) return;
@@ -398,11 +396,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let linksHtml = '';
             
-            // --- START OF FIX ---
-            // This logic now correctly handles all cases:
-            // 1. `documents`: an array of objects
-            // 2. `Document`: an array of objects (the inconsistent case)
-            // 3. `Document`: a single URL string
             let docs = [];
             if (project.documents && Array.isArray(project.documents)) {
                 docs = project.documents;
@@ -480,7 +473,7 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function initTypingEffect() {
         const textElement = document.getElementById('typing-text');
-        const text = "APPLIED AI & OPERATIONS RESEARCH";
+        const text = "DATA SCIENTIST & RESEARCHER";
         let index = 0;
         function type() {
             if (index < text.length) {
