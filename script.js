@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 'aria',
             role: 'Data Analyst and Planning Consultant',
             company: 'AriaShahd Saedinia',
-            period: 'Apr 2024 - Present',
+            period: 'Apr 2024 - Apr 2026',
             location: 'Tehran, Iran',
             details: [
                 'Design comprehensive Power BI dashboards for business analysis, providing insights into sales trends and supply chain performance.',
