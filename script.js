@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             image: 'images/MARL.png',
             title: 'Paper: Multi-Agent Reinforcement Learning for Continuous Dynamic Pricing and Occupancy-Aware Demand Response in Urban Microgrids',
-            description: 'This paper introduces a multi-agent reinforcement learning (MARL) framework designed to optimize electricity demand in urban microgrids. By modeling individual properties as autonomous agents that respond to dynamic pricing and occupancy patterns, the system significantly reduces energy costs and peak loads while safely enforcing physical grid constraints.',
+            description: 'This paper presents a multi-agent reinforcement learning framework for optimizing electricity demand in urban microgrids, reducing energy costs and peak loads through dynamic pricing and occupancy-aware control while maintaining grid safety constraints.',
             tags: ['Multi-Agent Reinforcement Learning', 'Urban Microgrids', 'P2P Energy Trading', 'RL'],
             Document: [
                 { 
