@@ -95,6 +95,18 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
+            image: 'images/MARL.png',
+            title: 'Paper: Multi-Agent Reinforcement Learning for Continuous Dynamic Pricing and Occupancy-Aware Demand Response in Urban Microgrids',
+            description: 'This paper introduces a multi-agent reinforcement learning (MARL) framework designed to optimize electricity demand in urban microgrids. By modeling individual properties as autonomous agents that respond to dynamic pricing and occupancy patterns, the system significantly reduces energy costs and peak loads while safely enforcing physical grid constraints.',
+            tags: ['Multi-Agent Reinforcement Learning', 'Urban Microgrids', 'P2P Energy Trading', 'RL'],
+            Document: [
+                { 
+                    name: 'Accepted for publication in the proceedings of the 3rd International Conference on Intelligent Systems, Blockchain, and Communication Technologies.', 
+                    url: '' 
+                }
+            ]
+        },
+        {
             image: 'images/medsrgan.webp',
             title: 'Code: MEDSRGAN for CT Scan Super-Resolution',
             description: 'An implementation of a Medical Super-Resolution Generative Adversarial Network (MEDSRGAN) to enhance the resolution of CT scan images, featuring a modular architecture with attention mechanisms.',
@@ -119,6 +131,15 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         // === Other Data Science Code and Research ===
+        {
+            image: 'images/superstore-dashboard.webp',
+            title: 'Superstore Sales PowerBI Dashboard',
+            description: 'A comprehensive Business Intelligence solution built with Power BI, DAX, and Power Query. This project analyzes raw sales data across six distinct dimensions—including executive overviews, discount impacts, and shipping operations—to deliver actionable KPIs. The dashboard is fully interactive and designed to support data-driven executive decision-making and operational optimization.',
+            tags: ["Business Intelligence", "Sales Analytics", "Data Analytics"],
+            Document: [
+                { name: 'GitHub Repository', url: 'https://github.com/parsakhavarinejad/superstore-sales-powerbi-dashboard' }
+            ]
+        },
         {
             image: 'images/OR-Case.webp',
             title: 'Operations Research Case Studies',
