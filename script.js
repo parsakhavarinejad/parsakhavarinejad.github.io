@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 'sadtunnel',
             role: 'Python Automation Developer',
-            company: 'Contract',
+            company: 'Sadd Tunnel Pars',
             period: 'May 2026 - Present',
-            location: 'Tehran, Iran',
+            location: 'Tehran, Iran (Contract)',
             details: [
                 'Develop Python programs for automated rock discontinuity extraction and geological log post-processing in mining engineering projects.',
                 'Automate data processing, calculation, and analysis workflows to improve efficiency and reduce manual processing.'
