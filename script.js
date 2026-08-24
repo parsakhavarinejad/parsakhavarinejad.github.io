@@ -2,6 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- DATA OBJECTS ---
     const experienceData = [
         {
+            id: 'spo',
+            role: 'Business Data Analyst',
+            company: 'SPO(P.J.S)Co.',
+            period: 'Aug 2026 - Present',
+            location: 'Tehran, Iran (Part-time)',
+            details: [
+                'Consult with business stakeholders to design and establish KPIs across business functions, ensuring alignment with strategic and operational objectives.',
+                'Support data-driven decision-making and Decision Support Systems (DSS) by transforming business data into actionable insights.',
+                'Design, develop, and maintain interactive Power BI dashboards and reporting solutions for management and operational teams.',
+                'Analyze and optimize business processes, including inventory management, workforce planning, sales, operations, and performance management.',
+                'Build demand forecasting models to support capacity planning, inventory decisions, resource allocation, and operational planning.',
+                'Translate complex analytical findings into clear business recommendations for management and decision-makers.'
+            ]
+        },
+        {
             id: 'persian-garden',
             role: 'Business Data Analyst',
             company: 'Persian Garden Studio',
@@ -16,16 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            id: 'freelance',
-            role: 'Independent Consultant - Data Scientist & Industrial Engineer',
-            company: 'Freelance',
+            id: 'sadtunnel',
+            role: 'Python Automation Developer',
+            company: 'Contract',
             period: 'May 2026 - Present',
-            location: 'Tehran, Iran — Remote, Worldwide (Part-time)',
+            location: 'Tehran, Iran',
             details: [
-                'Delivered BI dashboards (Power BI, Apache Superset) for project management analytics to 2 freelance clients.',
-                'Built predictive maintenance scheduling models using historical failure/maintenance data, reducing unplanned downtime by 15%.',
-                'Developed sales/supply forecasting models, improving demand prediction accuracy for client supply planning.',
-                'Automated project log processing with Python, cutting manual reporting time by 4 months.'
+                'Develop Python programs for automated rock discontinuity extraction and geological log post-processing in mining engineering projects.',
+                'Automate data processing, calculation, and analysis workflows to improve efficiency and reduce manual processing.'
             ]
         },
         {

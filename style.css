@@ -1,23 +1,23 @@
 /* =====================================================
    PARSA KHAVARINEJAD — PORTFOLIO
-   White + Ghost Purple Theme
+   Light Mode / Navy Blue + Purple Brand Theme
    ===================================================== */
 
 :root {
-    --white:        #FFFFFF;
-    --surface:      #F8F7FC;
-    --purple:       #7C6FAE;       /* ghost purple — primary accent */
-    --purple-deep:  #3D3466;       /* deep purple — headings */
-    --purple-mid:   #5B5090;       /* mid purple — hover states */
-    --lavender:     #E8E4F5;       /* lavender mist — chips, tags */
-    --lavender-dark:#D0C8EC;       /* slightly richer lavender */
-    --slate:        #64748B;       /* body text */
-    --slate-light:  #94A3B8;       /* muted text */
-    --border:       #E2DDF0;       /* subtle purple-tinted border */
-    --ink:          #1E1B30;       /* near-black for high-contrast text */
-    --shadow-sm:    0 1px 3px rgba(60, 52, 102, 0.06);
-    --shadow-md:    0 4px 16px rgba(60, 52, 102, 0.10);
-    --shadow-lg:    0 12px 40px rgba(60, 52, 102, 0.14);
+    --white:        #FFFFFF;       /* white */
+    --surface:      #F8FAFC;       /* light surface */
+    --purple:       #8B5CF6;       /* primary accent */
+    --purple-deep:  #14213D;       /* navy — headings / dominant tone */
+    --purple-mid:   #6C4AB6;       /* mid purple — hover states */
+    --lavender:     #EDE9FE;       /* light lavender — chips, tags */
+    --lavender-dark:#F1F5F9;       /* light slate tint */
+    --slate:        #475569;       /* body text */
+    --slate-light:  #64748B;       /* muted text */
+    --border:       #F1F5F9;       /* subtle border */
+    --ink:          #14213D;       /* navy — near-black for high-contrast text */
+    --shadow-sm:    0 1px 3px rgba(20, 33, 61, 0.06);
+    --shadow-md:    0 4px 16px rgba(20, 33, 61, 0.10);
+    --shadow-lg:    0 12px 40px rgba(20, 33, 61, 0.14);
     --radius:       10px;
     --radius-sm:    6px;
     --transition:   0.25s ease;
