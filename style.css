@@ -147,24 +147,25 @@ select {
 /* ---------- Brand ---------- */
 
 .nav-brand {
-    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+}
 
-    font-size: 1.25rem;
-    font-weight: 700;
-
-    color: var(--naval-night);
-
-    letter-spacing: 0.04em;
+.nav-brand img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 
     transition:
-        color var(--transition),
-        transform var(--transition);
+        transform var(--transition),
+        opacity var(--transition);
 }
 
-.nav-brand:hover {
-    color: var(--raptures-light);
+.nav-brand:hover img {
+    transform: translateY(-1px);
+    opacity: 0.85;
 }
-
 
 /* ---------- Navigation Links ---------- */
 
